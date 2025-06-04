@@ -1,2 +1,2 @@
 # SDO-System-Design-Ontology
-This repo. contains the core file of SDO, with demos by CQs answered by SPARQL
+This repo. is for demonstrating purpose. It contains the core file of SDO (.rdf), with demos by CQs answered by SPARQL (.txt)
