@@ -23,7 +23,7 @@ A concrete use case involves **Airbus** simulating the co-development of a small
 ## Repository Content
 
 - `/CQ and Queries`: Competency questions and corresponding returns
-- `/parsers`: 
+- `SystemDesignOnto_v6_add2OP.rdf`: 
 
 ## Tools Involved
 
