@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://airbus.eu/abox/msp3#"
+	xmlns:DSL_Customization="http://www.magicdraw.com/schemas/DSL_Customization.xmi"
+	xmlns:iof="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:ns="http://mysparql.ai/ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:Free_Form_Elements_Profile="http://www.magicdraw.com/schemas/Free_Form_Elements_Profile.xmi"
+	xmlns:path="http://www.ontotext.com/path#"
+	xmlns:xmi="http://www.omg.org/spec/XMI/20131001"
+	xmlns:uml="http://www.omg.org/spec/UML/20131001"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:si="https://www.w3schools.com/rdf/"
+	xmlns:MD_Customization_for_SysML__additional_stereotypes="http://www.magicdraw.com/spec/Customization/180/SysML"
+	xmlns:sdo="http://www.pics.lgp.uttop.fr/ontologies/systemdesign/"
+	xmlns:sensor-core="http://www.ontocommons.eu/test/sensor-core#"
+	xmlns:AMA___Airbus_MBSE_Automations_Profile="http://www.magicdraw.com/schemas/AMA___Airbus_MBSE_Automations_Profile.xmi"
+	xmlns:rdf4j="http://rdf4j.org/schema/rdf4j#"
+	xmlns:sysml="http://www.omg.org/spec/SysML/20181001/SysML"
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:gn="http://www.geonames.org/ontology#"
+	xmlns:MD_Customization_for_Requirements__additional_stereotypes="http://www.magicdraw.com/spec/Customization/180/Requirements"
+	xmlns:j.0="http://purl.obolibrary.org/obo/"
+	xmlns:StandardProfile="http://www.omg.org/spec/UML/20131001/StandardProfile"
+	xmlns:Validation_Profile="http://www.magicdraw.com/schemas/Validation_Profile.xmi"
+	xmlns:MagicDraw_Profile="http://www.omg.org/spec/UML/20131001/MagicDrawProfile"
+	xmlns:Dependency_Matrix_Profile="http://www.magicdraw.com/schemas/Dependency_Matrix_Profile.xmi"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:MBSELab="http://www.magicdraw.com/schemas/MBSELab.xmi"
+	xmlns:AMP___Airbus_MBSE_Profile="http://www.magicdraw.com/schemas/AMP___Airbus_MBSE_Profile.xmi"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/hasFunction">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/ontology/msp3#hasFunctionPartAtAllTimes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/ontology/msp3#hasSubSystemAtAllTimes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/ontology/msp3#hasLogicalSubSystemAtAllTimes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000166">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/ontology/msp3#hasInputState">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/ontology/msp3#hasOutputState">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/ontology/msp3#hasComponentPartAtAllTimes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/ontology/msp3#processPartOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567217019_834143_468942">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665567214573_379404_468912"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563016339_275066_164666">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563016339_275066_164666"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564837325_874465_301989">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665564837325_874465_301989"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563229920_662912_199627">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563229920_662912_199627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563229918_594767_199626">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563229918_594767_199626"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563229922_575896_199628">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563229922_575896_199628"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567217197_61128_469043">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565232780_856474_324536">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565232780_856474_324536"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563016332_377463_164652">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563016332_377463_164652"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567289846_956475_477130">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564855687_963301_303236">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235067_80766_324649">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#MaterialTransferProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567289853_135542_477139">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235049_249566_324621">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565232764_888787_324527"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049591_889720_313466">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#MaterialTransferProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567217200_203815_469049">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567217222_264775_469080">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567179186_762148_461991">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567179186_602612_461992">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565804728_653693_362174">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565804728_653693_362174"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563531230_583573_232826">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563531230_583573_232826"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563531232_856238_232829">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563531232_856238_232829"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563531231_23815_232827">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563531231_23815_232827"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563531231_608796_232828">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563531231_608796_232828"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567254163_928141_473172">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418331_575780_335127">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#MaterialTransferProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418315_612485_335104">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565418299_46693_335081"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567363106_527420_484546">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133038_233947_319001">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565130512_472115_318959"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563016333_646930_164653">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563016333_646930_164653"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235062_194773_324640">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235064_808013_324643">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#MaterialTransferProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567289843_256971_477126">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567289852_758374_477137">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563069011_84767_174708">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#FunctionFlowSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565566680_277811_346093">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565566680_277811_346093"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133046_11600_319016">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#MaterialTransferProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133031_627052_318994">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565130511_312862_318955"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567254164_903560_473173">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569410_674895_346193">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#MaterialTransferProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567441704_446641_492897">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569399_678426_346175">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565566735_998289_346138"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665568642812_83296_682549">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665568640765_777710_682514"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563016335_437583_164656">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563016335_437583_164656"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564900684_940608_306564">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#MaterialTransferProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567163029_320153_458298">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567163032_591292_458301">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565232781_57267_324537">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565232781_57267_324537"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049523_266130_313380">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565049523_266130_313380"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563016338_394924_164665">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563016338_394924_164665"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178521_377458_388096">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665566176043_361537_388031"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567790308_63109_523835">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567790304_744184_523831">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567790305_343736_523832">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567790306_599253_523833">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567790307_395555_523834">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_340523_388107">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567217011_931957_468937">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665567214571_215492_468910"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563016337_417261_164664">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563016337_417261_164664"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049466_29180_313328">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565049466_29180_313328"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567363102_685339_484540">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563836069_730564_250946">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563836069_730564_250946"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563210264_658702_197259">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563210264_658702_197259"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563052197_921653_170432">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563052197_921653_170432"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563064863_592323_174221">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569406_986136_346186">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#MaterialTransferProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569394_614388_346170">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565566734_885616_346133"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567441683_729055_492878">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565130457_472834_318906">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565130457_472834_318906"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563016342_930064_164672">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665563016342_930064_164672"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049425_258933_313304">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://airbus.eu/ontology/msp3#C_19_0_4_7a801a8_1665565049425_258933_313304"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567082594_52576_450584">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565566676_881780_346090"/>
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567082631_57780_450606"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567082384_386132_450567">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049463_755479_313324"/>
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049421_718794_313301"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567836131_884168_527611">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566252522_881347_393358"/>
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567836174_349728_527625"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565348762_402959_329882">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418245_460810_335042"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565348737_145855_329875">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418241_299459_335037"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567082599_593898_450587">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565566702_406178_346107"/>
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565566681_247348_346094"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567082394_215148_450572">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049521_98313_313378"/>
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049481_666081_313341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565061111_471872_313703">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049426_508415_313305"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567132544_464552_451328">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418266_620402_335061"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567082609_826166_450592">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565566683_365655_346096"/>
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565566647_517797_346077"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565348741_232859_329876">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418241_899431_335038"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565065761_152435_313772">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049465_372961_313327"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565065765_654959_313776">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049469_63947_313332"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565346231_609500_329846">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418254_513038_335051"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565065755_226969_313765">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049466_29180_313328"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665567130121_507847_451275">
+	<sdo:specifyFunction rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565130442_349884_318894"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235049_249566_324621">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_433909_324637"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178521_377458_388096">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_340523_388107"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133020_157934_318985">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133040_307343_319004"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049554_914050_313423">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_230413_313462"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912090_271803_307263">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912095_67810_307270"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235036_588909_324613">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_149896_324638"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235048_612306_324620">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_433909_324637"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133016_653653_318983">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133040_307343_319004"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235033_79501_324612">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_149896_324638"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178516_154739_388093">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_334546_388106"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178518_988933_388094">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_334546_388106"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133021_650141_318986">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133041_197495_319006"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569376_909423_346161">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569399_852900_346176"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565496097_651640_340688">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565496101_891561_340690"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418302_310395_335094">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418327_323937_335119"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235041_499510_324616">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_149896_324638"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049568_645241_313433">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_323332_313463"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049555_547500_313424">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049589_713765_313460"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235039_171586_324615">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_433909_324637"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133019_18943_318984">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133041_527924_319005"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235050_779846_324622">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235062_194773_324640"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049578_443446_313446">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_652701_313458"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254861_801457_393406">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254895_500216_393423"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569390_554358_346167">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569402_710724_346180"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049558_839163_313426">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_230413_313462"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254864_410438_393407">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254895_500216_393423"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049563_343369_313429">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_652701_313458"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133024_805075_318987">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133041_197495_319006"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912092_66165_307265">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912096_381843_307272"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912088_86905_307262">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912095_292370_307269"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565024654_351403_312322">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565024658_53240_312326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912091_42450_307264">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912096_930516_307271"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049565_564900_313430">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049589_713765_313460"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235047_4057_324619">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235062_743965_324639"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235038_322501_324614">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_149896_324638"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049565_545370_313431">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_676872_313459"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254871_889936_393409">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254895_500216_393423"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569382_288787_346163">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569400_652135_346177"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569388_720853_346166">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569402_710724_346180"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049552_55126_313422">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_652701_313458"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418303_590439_335095">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418327_507489_335120"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418308_520531_335096">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418328_187345_335121"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254878_120163_393412">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254896_863632_393424"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254876_299954_393411">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254896_863632_393424"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049570_291696_313434">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_230413_313462"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418470_691359_335168">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418481_935016_335180"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178519_339459_388095">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_340523_388107"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178514_723125_388092">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_334546_388106"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569375_811864_346160">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569399_852900_346176"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235045_994618_324618">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235062_743965_324639"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235030_384602_324611">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235062_743965_324639"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254873_478462_393410">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254895_500216_393423"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254882_791173_393414">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254896_863632_393424"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178509_474975_388090">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_334546_388106"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254869_662916_393408">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254895_500216_393423"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569378_478062_346162">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569400_652135_346177"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178511_9928_388091">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_334546_388106"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178524_275067_388097">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_340523_388107"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049556_437385_313425">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_676872_313459"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254880_824549_393413">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254896_863632_393424"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235043_278313_324617">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_433909_324637"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569386_951427_346165">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569400_652135_346177"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049562_169174_313428">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_652701_313458"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049559_537382_313427">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049589_938960_313461"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569385_797475_346164">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569400_652135_346177"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049566_140493_313432">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_230413_313462"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564971592_981123_309825">
+	<sdo:processPartOf rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564971596_518786_309830"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563951339_991359_256873">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254896_863632_393424"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563138015_335395_186238">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564971596_518786_309830"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563193681_15070_194942">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049589_713765_313460"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563193678_6088_194941">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_676872_313459"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563193674_666779_194940">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_230413_313462"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563193665_663793_194938">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_652701_313458"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563193669_113012_194939">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049589_938960_313461"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563193687_808999_194956">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_323332_313463"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563103603_24614_180226">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912096_930516_307271"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563103607_954411_180229">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912096_381843_307272"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564837283_288156_301968">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418481_935016_335180"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563176994_754344_192181">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565024658_53240_312326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564837246_750363_301950">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565496101_891561_340690"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563323065_912310_210499">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418327_323937_335119"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563323061_746981_210498">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418327_507489_335120"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563323067_812143_210503">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565418328_187345_335121"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563225674_36793_199081">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133041_527924_319005"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563256607_256457_203042">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_149896_324638"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563256612_4044_203044">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235061_433909_324637"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563256610_138755_203043">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235062_743965_324639"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563256616_771459_203045">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235062_194773_324640"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563408341_90756_219969">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569402_710724_346180"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563103604_426527_180227">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912095_67810_307270"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563874404_971894_252757">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_334546_388106"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563874408_614493_252758">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566178534_340523_388107"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563225676_837119_199082">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133041_197495_319006"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563408337_604117_219968">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569400_652135_346177"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563408336_828650_219967">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565569399_852900_346176"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563103606_658563_180228">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665564912095_292370_307269"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563951332_93472_256872">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665566254895_500216_393423"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563225671_919199_199080">
+	<j.0:BFO_0000055 rdf:resource="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133040_307343_319004"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235049_249566_324621">
+	<sdo:hasDuration>30min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133020_157934_318985">
+	<sdo:hasDuration>1hr</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235048_612306_324620">
+	<sdo:hasDuration>60min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133021_650141_318986">
+	<sdo:hasDuration>30min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235041_499510_324616">
+	<sdo:hasDuration>120min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235039_171586_324615">
+	<sdo:hasDuration>60min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133019_18943_318984">
+	<sdo:hasDuration>6hr</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049578_443446_313446">
+	<sdo:hasDuration>30min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049558_839163_313426">
+	<sdo:hasDuration>30min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049563_343369_313429">
+	<sdo:hasDuration>30min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565133024_805075_318987">
+	<sdo:hasDuration>30min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049565_564900_313430">
+	<sdo:hasDuration>20min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235047_4057_324619">
+	<sdo:hasDuration>30min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049565_545370_313431">
+	<sdo:hasDuration>20min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049570_291696_313434">
+	<sdo:hasDuration>30min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235045_994618_324618">
+	<sdo:hasDuration>45min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565235043_278313_324617">
+	<sdo:hasDuration>30min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049562_169174_313428">
+	<sdo:hasDuration>5min</sdo:hasDuration>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049566_140493_313432">
+	<sdo:hasDuration>20min</sdo:hasDuration>
+</rdf:Description>
+
+</rdf:RDF>
