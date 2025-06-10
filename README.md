@@ -17,7 +17,7 @@ This work is carried out as part of the **EXCELAB** project, funded by the Civil
 
 ## Use Case
 
-A concrete use case involves **Airbus** simulating the co-development of a small aircraft and its production system, focusing on  **global manufacturing** and **wing manufacturing**.
+A use case involves **Airbus**'s development of a small aircraft and its production system, including system design models for both  **global manufacturing** and **wing manufacturing**.
 
 ## Repository Content
 
