@@ -22,11 +22,8 @@ A concrete use case involves **Airbus** simulating the co-development of a small
 
 ## Repository Content
 
-- `/ontology`: OWL files defining the SDO
-- `/parsers`: Scripts for model extraction and transformation
-- `/examples`: Example models (MBSE, CAD, DES)
-- `/api`: REST APIs for ontology interaction
-- `/docs`: Technical documentation and user guides
+- `/CQ and Queries`: Competency questions and corresponding returns
+- `/parsers`: 
 
 ## Tools Involved
 
