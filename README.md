@@ -10,11 +10,10 @@ This work is carried out as part of the **EXCELAB** project, funded by the Civil
 
 ## Objectives
 
-- Enable semantic interoperability between tools like **Cameo*.
+- Enable semantic interoperability between tools like **Cameo**.
 - Provide a **semantic hub** using SDO to translate, map, and validate model elements.
 - Support both **automated** and **manual** data exchange via APIs and knowledge graphs.
 - Improve traceability and adaptability across evolving models and ontologies.
-
 
 ## Use Case
 
