@@ -1,0 +1,73 @@
+=======CQ1==========
+What are the preceding activity and next activity of trimming during sheet press forming?
+
+=======SPARQL==========
+PREFIX iof: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <http://www.pics.lgp.uttop.fr/ontologies/systemdesign/>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?s ?a ?ab ?abn ?an ?ann
+where {
+    ?s a/skos:prefLabel ?sn.
+    ?s iof:hasFunction ?f.
+    ?f (sdo:hasFunctionPartAtAllTimes|sdo:hasFunctionPartAtAllTimes/sdo:hasFunctionPartAtAllTimes) ?fc.
+    ?fc bfo:BFO_0000055 ?a.
+    ?ax sdo:processPartOf ?a.
+    OPTIONAL{
+        ?ax sdo:hasOutputState ?op.
+        ?tnn sdo:hasInputState ?op.
+        ?tnn sdo:hasOutputState ?tno.
+        OPTIONAL{
+            ?an sdo:hasInputState ?tno.
+            ?an a/skos:prefLabel ?ann
+        }
+    }
+    OPTIONAL
+    {
+        ?ax sdo:hasInputState ?ip.
+        ?tnb sdo:hasOutputState ?ip.
+        ?tnb sdo:hasInputState ?tni.
+        OPTIONAL{
+            ?ab sdo:hasOutputState ?tni.
+            ?ab a/skos:prefLabel ?abn
+        }
+    }
+    FILTER(?s = <http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563086585_370496_177080>)
+    filter(?a = <http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_652701_313458>)
+    filter(?ax = <http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049578_443446_313446>)
+}
+
+
+
+=============Response json==============
+
+
+{
+    "systems": [
+        {
+            "activities": [
+                {
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_652701_313458",
+                    "subActivities": [
+                        {
+                            "incoming": [
+                                {
+                                    "from-activity": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049562_169174_313428"
+                                }
+                            ],
+                            "outgoing": [
+                                {
+                                    "to-activity": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049563_343369_313429"
+                                }
+                            ],
+                            "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049578_443446_313446"
+                        }
+                    ]
+                }
+            ],
+            "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563086585_370496_177080"
+        }
+    ]
+}
