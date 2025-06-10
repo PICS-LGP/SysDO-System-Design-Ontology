@@ -23,6 +23,8 @@ A use case involves **Airbus**'s development of a small aircraft and its product
 
 - `/CQ and Queries`: Competency questions and corresponding returns
 - `SystemDesignOnto_v6.rdf`: The main ontology file
+- `Parsed knowledge graph - ver.demo.rdf`: This file contains a parsed knowledge graph representing a partial, lightweight version of the aircraft manufacturing design model, structured according to the SDO schema.
+> Note: `Parsed knowledge graph - ver.demo.rdf` is a demo version and does not reflect the complete dataset.
 
 ## Tools Involved
 
