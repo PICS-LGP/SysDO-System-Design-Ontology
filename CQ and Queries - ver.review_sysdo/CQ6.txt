@@ -1,0 +1,60 @@
+=======CQ6==========
+What are the steps of sheet press forming? What is the duration of each step?
+
+=======SPARQL==========
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sysdo: <http://www.pics.lgp.uttop.fr/ontologies/systemdesign/>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+select ?systemId ?activityId ?subActivityId ?name ?duration where {
+    ?systemId a/skos:prefLabel ?sn.
+    ?systemId iof-core:hasFunction ?f.
+    ?f (sysdo:hasFunctionPartAtAllTimes|sysdo:hasFunctionPartAtAllTimes/sysdo:hasFunctionPartAtAllTimes) ?fc.
+    ?fc bfo:BFO_0000055 ?activityId.
+    ?subActivityId sysdo:processPartOf ?activityId.
+    ?subActivityId a/skos:prefLabel ?name.
+    optional{?subActivityId sysdo:hasDuration ?duration}
+    FILTER(?systemId = <http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563086585_370496_177080>)
+    filter(?activityId = <http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_230413_313462>)
+    FILTER(?subActivityId = <http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049558_839163_313426>)
+}
+
+=============Response json==============
+
+{
+    "systems": [
+        {
+            "activities": [
+                {
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_652701_313458",
+                    "subActivities": [
+                        {
+                            "duration": "30min",
+                            "name": "Trimming",
+                            "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049578_443446_313446"
+                        },
+                        {
+                            "duration": "30min",
+                            "name": "Quality inspection area",
+                            "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049563_343369_313429"
+                        },
+                        {
+                            "name": "Buffer raw material",
+                            "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049552_55126_313422"
+                        },
+                        {
+                            "duration": "5min",
+                            "name": "Sheet press forming",
+                            "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049562_169174_313428"
+                        }
+                    ]
+                }
+            ],
+            "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563086585_370496_177080"
+        }
+    ]
+}

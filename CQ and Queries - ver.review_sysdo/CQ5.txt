@@ -1,0 +1,50 @@
+=======CQ5==========
+What resources are used for the final assembly of the aircraft?
+
+=======SPARQL==========
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+PREFIX iof: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdo: <http://www.pics.lgp.uttop.fr/ontologies/systemdesign/>
+
+
+SELECT DISTINCT ?systemId ?sysName ?ressourceId ?name
+WHERE {
+    ?systemId a/skos:prefLabel ?sysName.
+    ?systemId iof:hasFunction ?f.
+    ?f a/skos:prefLabel ?fn.
+    ?systemId sdo:hasLogicalSubSystemAtAllTimes ?ressourceId.
+    ?ressourceId a/skos:prefLabel ?name.
+    FILTER(?systemId = <http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563265895_832010_203595>)
+}
+
+
+=============Response json==============
+
+{
+    "systems": [
+        {
+            "resources": [
+                {
+                    "name": "Buffer 1_sfHCst02_asbl04",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563282979_945450_205945"
+                },
+                {
+                    "name": "Final wing assembly_sfHCst01_asbl05(a)_asbl05(b)_asbl05(c)",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563282980_182345_205946"
+                },
+                {
+                    "name": "Stiffners Assembly_sfHCst05_sfHCst04_asbl01_asbl02",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563282977_116408_205943"
+                },
+                {
+                    "name": "System Installation_sfHCst03_asbl03",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563282978_624925_205944"
+                }
+            ],
+            "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563265895_832010_203595"
+        }
+    ]
+}
