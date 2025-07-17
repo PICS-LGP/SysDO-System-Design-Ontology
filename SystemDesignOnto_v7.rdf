@@ -1,0 +1,1223 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#"
+     xml:base="http://www.pics.lgp.uttop.fr/ontologies/systemdesign"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sysdo="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign">
+        <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202401/core/Core/"/>
+        <dc:contributor xml:lang="en">Arkopaul Sarkar, University of Technology of Tarbes</dc:contributor>
+        <dc:contributor xml:lang="en">Mohamed Hedi KARRAY, University of Technology of Tarbes</dc:contributor>
+        <dc:license xml:lang="en">http://opensource.org/licenses/MIT</dc:license>
+        <terms:abstract xml:lang="en">The System Design(SD) Ontology is designed to encapsulate the essential elements of system design, particularly within aerospace applications. It integrates Basic Formal Ontology (BFO) and IOF-Core to provide a basis for modeling the technical, functional, and operational aspects of complex systems. SD ontology defines terms related to system components, functions, and processes, supporting both decomposition of systems into sub-systems and modeling interactions such as material and control flows. Its amis to ensure a common understanding in system design such that multidisciplinary cooperation could be improved.</terms:abstract>
+        <terms:creator xml:lang="en">Zhengyu Liu, University of Technology of Tarbes</terms:creator>
+        <terms:publisher xml:lang="fr">Laboratoire Genie Production,UNIVERSITÉ DE TECHNOLOGIE TARBES OCCITANIE PYRÉNÉES</terms:publisher>
+        <terms:title xml:lang="en">System Design Ontology (SysDO)</terms:title>
+        <rdfs:comment xml:lang="en">This is an ontology developping for system design model, for example activity diagram and component diagram. It follows BFO and IOF. The prefix &quot;SysDO&quot; signifies &quot;system design ontology&quot; for abbreviation.</rdfs:comment>
+        <rdfs:label xml:lang="en">System Design Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"/>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000063"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000082 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000082"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000108"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000170 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000170"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000171 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000171"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000178 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000199 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000199"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000221 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000221"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000223 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000223"/>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#handlesMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#handlesMaterial">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">handles material</rdfs:label>
+        <skos:definition xml:lang="en">x handles material y = there exists process boudary z, port x participates in process boundary z, and material entity y participates in process boundary z.</skos:definition>
+        <AnnotationVocabulary:firstOrderLogicAxiom>handleMaterial(x,y) ↔ Port(x) ∧ MaterialEntity(y) ∧ ∃z(ProcessBoundary(z) participatesIn(x,z) ∧ participatesIn(y,z)</AnnotationVocabulary:firstOrderLogicAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtAllTimes -->
+
+    <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtAllTimes">
+        <rdfs:subPropertyOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime"/>
+        <rdfs:label>has function part at all times</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">p has function part c at all times =Def for all times t, p exists at t implies (p is a function, c is a function, and c functions to make p functions some way at t)</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <rdfs:label>has function part at some time</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a has function part b = a, b are both functions, and function b make function a works</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasInputState -->
+
+    <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasInputState">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+        <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <rdfs:label xml:lang="en">has input state</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">process a has input state b, means b is the process boundary at the input of a</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtAllTimes -->
+
+    <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtAllTimes">
+        <rdfs:subPropertyOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime"/>
+        <rdfs:label>has logical subsystem at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:label>has logical subsystem as some time</rdfs:label>
+        <skos:definition>a has logical subsystem b = a, b are both logical systems, and logical system b is a part of logical system a that make its logic complet</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasOutputState -->
+
+    <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasOutputState">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+        <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <rdfs:label xml:lang="en">has output state</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">process a has output state b, means b is the process boundary at the output of a</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtAllTimes -->
+
+    <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtAllTimes">
+        <rdfs:subPropertyOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime"/>
+        <rdfs:label>has subsystem at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+        <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+        <rdfs:label>has subsystem at some time</rdfs:label>
+        <skos:definition>a has subsystem b = a, b are both systems, and system b is a part of system a that make it work</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/functionOf -->
+
+    <owl:ObjectProperty rdf:about="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/hasFunction -->
+
+    <owl:ObjectProperty rdf:about="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/prescribedBy -->
+
+    <owl:ObjectProperty rdf:about="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/prescribes -->
+
+    <owl:ObjectProperty rdf:about="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasAmountOfWorkers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasAmountOfWorkers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">has amount of worker</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>&apos;has amount of workers&apos; notifies the the amount of workers or labors is required in a specific process</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasDuration">
+        <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasSimpleExpressionValue"/>
+        <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">has duration</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>&apos;has duration&apos; is the temporal duration for a planned process, whereas its unit has to be declared such as second or minute</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000203"/>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlEndProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlEndProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+        <rdfs:label>control end process</rdfs:label>
+        <skos:example xml:lang="en">The control end process e, where the input is a control flow x. Once x reaches e, the process halts, with no further actions or activities in the system beyond this point.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A  control flow process that terminates the execution or deactivates ae activity, or sequence within a system</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#InformationFlow"/>
+        <rdfs:label>control flow</rdfs:label>
+        <skos:example xml:lang="en">Control flow often trigger state changes or actions in the receiving components. sometimes they are represented as special types of information flows, but they are distinguished by their purpose of influencing system behavior rather than just transferring data.</skos:example>
+        <skos:example xml:lang="en">signal from central controller to end actuator</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A control flow process represents the transfer of control signals or commands that influence the behavior or state of components within a system</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowDecisionProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowDecisionProcess">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+        <rdfs:label>control flow decision process</rdfs:label>
+        <skos:example xml:lang="en">The control flow decision process d, where the input is a control flow f. If the condition evaluated at d is true, the flow is directed to path p1; if false, it is directed to path p2.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A control flow process that evaluates a condition and directs the control flow to one of several possible paths based on the outcome of the option</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowForkProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowForkProcess">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+        <rdfs:label>control flow fork process</rdfs:label>
+        <skos:example xml:lang="en">The fork process f, where the input is a single flow x. At f, the flow x is split into two parallel flows, x1 and x2, which are executed simultaneously.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A control flow process that splits a single control flow into multiple concurrent flows, allowing parallel execution of activities or processes</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowJoinProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowJoinProcess">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+        <rdfs:label>control flow join process</rdfs:label>
+        <skos:example xml:lang="en">The control flow joint process j, where the inputs are two control flows x1 and x2. Once both x1 and x2 complete, they are merged into a single flow y that is the output of j.</skos:example>
+        <AnnotationVocabulary:explanatoryNote xml:lang="en">typically waiting for all incoming flows to complete before proceeding to the combined flow.</AnnotationVocabulary:explanatoryNote>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A control flow process that combines multiple control flows into a single flow</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowMergeProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowMergeProcess">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+        <rdfs:label>control flow merge process</rdfs:label>
+        <skos:example xml:lang="en">The merge process m, where the inputs are flows a, b, and c. When any one of these flows is activated, the process continues with a single flow d, not necessarily waiting for all inputs to complete.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A control flow process that combines multiple control flows into a single flow, allowing the process to continue when any one of the incoming flows is activated</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlStartProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlStartProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+        <rdfs:label>control start process</rdfs:label>
+        <skos:example xml:lang="en">The start process s, which has no input flow. Once triggered, it generates an output flow x that initiates the execution of the all the subsequent activities in the system.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A  control flow process that initiates the execution or activation of activity, or sequence within a system</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlTransferProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlTransferProcess">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+        <rdfs:label>control transfer process</rdfs:label>
+        <skos:example xml:lang="en">The transfer process t, where control flow x is passed from component a to component b. Once a completes its execution, control flow x is handed over to b for further processing.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A control flow process that transfers control from one component or activity to another within a system</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <rdfs:label>flow</rdfs:label>
+        <skos:example xml:lang="en">In a car manufacturing plant design model, the designed movement of car bodies along the assembly line from one workstation to another</skos:example>
+        <AnnotationVocabulary:explanatoryNote xml:lang="en">Flows describe how different parts of a system interact and how resources or information move through the system. In SysML, flows are often represented using Item Flows on connectors between blocks.</AnnotationVocabulary:explanatoryNote>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A connector represents the transfer or exchange of elements (such as material, information, or control signals) between components or parts of a system.</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>flow specification</rdfs:label>
+        <skos:example xml:lang="en">A manual of drink production line the movement of bottles through the production line, detailing the rate of flow, the routing between stations</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a plan specification that prescribes the transfer of materials, information, or energy between different functions or components within a system or process</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionFlowSpecification -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionFlowSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+        <rdfs:label>function flow specification</rdfs:label>
+        <skos:example xml:lang="en">In a function flow specification FS1, flow f1 is designed to start by  the sending function A  via port p1</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a flow specification of function or functions</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionPrecedenceSpecification -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionPrecedenceSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>function precedence specification</rdfs:label>
+        <skos:example xml:lang="en">function f1 f2 f3 must be triggered respectively, that is f1 precedes f2 that precedes f3</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a precedence specification that prescribes the properties and relationships between functions or activities within a function</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+        <rdfs:label>function specification</rdfs:label>
+        <skos:example xml:lang="en">A manual in car manufacturing plant on the series of welding operations required to assemble the car body</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a plan specification that prescribes a set of functions or activities to be performed within a system or process.</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Through incoming port p1, component C receives data</rdfs:comment>
+        <rdfs:label>incoming Port</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">An incoming port is an interaction point through which data, command, material, or energy can enter the owning block.</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#InformationFlow -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#InformationFlow">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow"/>
+        <rdfs:label>information flow</rdfs:label>
+        <skos:example xml:lang="en">The rolling speed of wheels are captured to sensors and presented on screen</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">An information flow represents the transfer of data, commande, or knowledge between components or actors in a system</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowDecisionProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowDecisionProcess">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+        <rdfs:label>material flow decision process</rdfs:label>
+        <skos:example xml:lang="en">In the material flow decision process p1, material M is at location L1. The system evaluates whether the material meets a specific condition, for example weight. If the condition is satisfied, the material is directed to location L2; if not, it is sent to location L3.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A material location change process that evaluates a condition and directs the control flow to one of several possible paths based on the outcome of the option</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowForkProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowForkProcess">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+        <rdfs:label>material flow fork process</rdfs:label>
+        <skos:example xml:lang="en">In the material flow fork process p1, material M at location L1 is split into two concurrent flows. One part of M, m1 is sent to location L2 for processing, while another part m2 is simultaneously sent to location L3. Both flows occur in parallel, enabling multiple operations to be carried out on the material.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A material location change process that splits a single control flow into multiple concurrent flows, allowing parallel execution of activities or processes</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowJoinProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowJoinProcess">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+        <rdfs:label>material flow join process</rdfs:label>
+        <skos:example xml:lang="en">In the material flow joint process p1, materials M1 from location L1 and M2 from location L2 are combined into a single flow at location L3. The process waits for both M1 and M2 to arrive at L3 before proceeding</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A material location change process that combines multiple control flows into a single flow, typically waiting for all incoming flows to complete before proceeding</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowMergeProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowMergeProcess">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+        <rdfs:label>material flow merge process</rdfs:label>
+        <skos:example xml:lang="en">In the material flow merge process p1, materials M1 from location L1, M2 from location L2, and M3 from location L3 are merged into a single flow at location L4. As soon as any one of M1, M2, or M3 arrives at L4 the process continues without waiting for all materials to arrive.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A material location change process that combines multiple control flows into a single flow, allowing the process to continue when any one of the incoming flows is activated</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSinkProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSinkProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+        <rdfs:label>material sink process</rdfs:label>
+        <skos:example xml:lang="en">The material sink process p1, where the input is a material flow x. Once x reaches e, the material location change process halts, with no further actions or activities in the system beyond this point.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A material location change process that receives, consumes, or removes material from a system, acting as the termination point for a material sequence</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSourceProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSourceProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+        <rdfs:label>material source process</rdfs:label>
+        <skos:example xml:lang="en">The source process p1, which has no input flow. Once triggered, it generates an output material location change flow x that initiates the execution of the all the subsequent activities in the system.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A material location change process that introduces or generates material into a system, acting as the origin point for a material sequence</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialTransferProcess -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialTransferProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty>
+                                            <rdf:Description>
+                                                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000170"/>
+                                            </rdf:Description>
+                                        </owl:onProperty>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000203"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000223"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty>
+                                                                                            <rdf:Description>
+                                                                                                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000199"/>
+                                                                                            </rdf:Description>
+                                                                                        </owl:onProperty>
+                                                                                        <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty>
+                                            <rdf:Description>
+                                                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000170"/>
+                                            </rdf:Description>
+                                        </owl:onProperty>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000203"/>
+                                                                    <owl:Class>
+                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000221"/>
+                                                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                                                                            </owl:Restriction>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty>
+                                                                                    <rdf:Description>
+                                                                                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000199"/>
+                                                                                    </rdf:Description>
+                                                                                </owl:onProperty>
+                                                                                <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+                                                                            </owl:Restriction>
+                                                                        </owl:intersectionOf>
+                                                                    </owl:Class>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+        <rdfs:label>material transfer process</rdfs:label>
+        <skos:example xml:lang="en">In the material transfer process p1, material M is transferred from station S1to station S2.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A material location change process that transfers control from one component or activity to another within a system</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Through outgoing port p1, component C sends data the its next stop</rdfs:comment>
+        <rdfs:label>outgoing port</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">An incoming port is an interaction point through which data, command, material, or energy can enter the owning block.</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+                <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+                <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>port</rdfs:label>
+        <skos:example xml:lang="en">A component C has two ports, p1 and p2. Through p1, C receives input data . After processing, C sends the output data through p2 to the next component in the system.</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A port is a interaction point through which data, command, material, or energy can enter or leave the owning block.</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000034"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <rdfs:comment>port function</rdfs:comment>
+        <skos:example xml:lang="en">Basic function of a port can be either sending or receiving data as specified in its subclasses</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">The function of a port</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+        <rdfs:label>precedence specification</rdfs:label>
+        <skos:definition xml:lang="en">Restrictions indicating that the installation of the dashboard must occur after the windshield is in place but before the seats are installed</skos:definition>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a plan specification that prescribes the sequential or parallel relationships between functions or activities within a process or system, including dependencies and timing constraints</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+        <rdfs:label>receiving function</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">the function of a port to accept incoming data, signals, or control flows from exterior</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>receiving function specification</rdfs:label>
+        <skos:example xml:lang="en">Receiving function of port p1 accepts only pdf file</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A function specification that prescribes one or a set of functions or activities about taking something from the exterior.</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+        <rdfs:label>sending function</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>the function of a port to sending outgouing data, signals, or control flows to exterior</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>sending function specification</rdfs:label>
+        <skos:example xml:lang="en">sending function of port p1 send only int data</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A function specification is an information content entity that prescribes one or a set of functions or activities about giving something to exterior.</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFlowSpecification -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFlowSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+        <rdfs:label>system flow specification</rdfs:label>
+        <skos:example xml:lang="en">In a system flow specification SS1, the flow f1 starts at the outgoing port p1 of system X</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a flow specification of system or systems</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000034"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+                        <owl:allValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtAllTimes"/>
+                <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>system function</rdfs:label>
+        <skos:example xml:lang="en">the Anti-lock braking system (ABS) of a car&apos;s function is to prevent wheel lockup during hard braking</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">function of a system</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemPrecedenceSpecification -->
+
+    <owl:Class rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemPrecedenceSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>system precedence specification</rdfs:label>
+        <skos:example xml:lang="en">In a system precedence specification SS1, system s1 must complete its processing before system s2 can initiate. that is s1 precedes s2</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a precedence specification that prescribes the properties and relationships between systems or activities within a system</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity -->
+
+    <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess -->
+
+    <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification -->
+
+    <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess -->
+
+    <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/System -->
+
+    <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+                <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFlowSpecification"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionFlowSpecification"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow"/>
+                            <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
