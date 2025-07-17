@@ -1,6 +1,6 @@
-# SDO-System-Design-Ontology
+# SysDO-System-Design-Ontology
 
-The **System Design Ontology (SDO)** is a domain-level ontology developed within the **EXCELAB** project to support model interoperability across system engineering tools in industrial contexts.
+The **System Design Ontology (SysDO)** is a domain-level ontology developed within the **EXCELAB** project to support model interoperability across system engineering tools in industrial contexts.
 
 ## Project Context: EXCELAB
 
@@ -11,7 +11,7 @@ This work is carried out as part of the **EXCELAB** project, funded by the Civil
 ## Objectives
 
 - Enable semantic interoperability between tools like **Cameo**.
-- Provide a **semantic hub** using SDO to translate, map, and validate model elements.
+- Provide a **semantic hub** using SysDO to translate, map, and validate model elements.
 - Support both **automated** and **manual** data exchange via APIs and knowledge graphs.
 - Improve traceability and adaptability across evolving models and ontologies.
 
@@ -23,7 +23,7 @@ A use case involves **Airbus**'s development of a small aircraft and its product
 
 - `/CQ and Queries`: Competency questions and corresponding returns
 - `SystemDesignOnto_v6.rdf`: The main ontology file
-- `Parsed knowledge graph - ver.demo.rdf`: This file contains a parsed knowledge graph representing a partial, lightweight version of the aircraft manufacturing design model, structured according to the SDO schema.
+- `Parsed knowledge graph - ver.demo.rdf`: This file contains a parsed knowledge graph representing a partial, lightweight version of the aircraft manufacturing design model, structured according to the SysDO schema.
 > Note: `Parsed knowledge graph - ver.demo.rdf` is a demo version and does not reflect the complete dataset.
 
 ## Tools Involved
