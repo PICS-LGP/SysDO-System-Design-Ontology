@@ -1,0 +1,66 @@
+=======CQ3==========
+What are the components and functions of the Elementary metallic part manufacturing system? 
+
+=======SPARQL==========
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sysdo: <http://www.pics.lgp.uttop.fr/ontologies/systemdesign/>
+
+SELECT ?systemId ?sn ?tn ?fn ?fc ?name ?activityId ?an
+WHERE {
+    ?systemId a/skos:prefLabel ?sn.
+    ?systemId iof-core:hasFunction ?f.
+    ?f a/skos:prefLabel ?fn.
+    ?systemId sysdo:hasLogicalSubSystemAtAllTimes ?t.
+    ?t a/skos:prefLabel ?tn.
+
+    #get all child functions
+    ?f (sysdo:hasFunctionPartAtAllTimes|sysdo:hasFunctionPartAtAllTimes/sysdo:hasFunctionPartAtAllTimes) ?fc.
+    ?fc a/skos:prefLabel ?name.
+
+    #get the Super activities
+    ?fc bfo:BFO_0000055 ?activityId.
+    OPTIONAL {?activityId a/skos:prefLabel ?an}
+
+    FILTER(?fn != ?name)
+    FILTER(?systemId = <http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563229920_662912_199627>)
+}
+
+=============Response json==============
+
+{
+    "systems": [
+        {
+            "components": [
+                {
+                    "name": "Cutting station for spars",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049589_713765_313460"
+                },
+                {
+                    "name": "Cutting station for stringers",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_676872_313459"
+                },
+                {
+                    "name": "Stamping",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_230413_313462"
+                },
+                {
+                    "name": "Sheet press forming",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049588_652701_313458"
+                },
+                {
+                    "name": "Surface protection large",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049589_938960_313461"
+                },
+                {
+                    "name": "Surface protection small",
+                    "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665565049590_323332_313463"
+                }
+            ],
+            "id": "http://airbus.eu/abox/msp3/MSP3Excelab140423153407#I_19_0_4_7a801a8_1665563086585_370496_177080"
+        }
+    ]
+}
