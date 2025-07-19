@@ -16,7 +16,7 @@
 	xmlns:terms="http://purl.org/dc/terms/"
 	xmlns:si="https://www.w3schools.com/rdf/"
 	xmlns:MD_Customization_for_SysML__additional_stereotypes="http://www.magicdraw.com/spec/Customization/180/SysML"
-	xmlns:sdo="http://www.pics.lgp.uttop.fr/ontologies/systemdesign/"
+	xmlns:sysdo="http://www.pics.lgp.uttop.fr/ontologies/systemdesign/"
 	xmlns:sensor-core="http://www.ontocommons.eu/test/sensor-core#"
 	xmlns:AMA___Airbus_MBSE_Automations_Profile="http://www.magicdraw.com/schemas/AMA___Airbus_MBSE_Automations_Profile.xmi"
 	xmlns:rdf4j="http://rdf4j.org/schema/rdf4j#"
