@@ -1,0 +1,94 @@
+=======CQ5==========
+What resources are used for the final assembly system of the Wing?
+
+
+=======SPARQL==========
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+PREFIX iof: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sysdo: http://www.pics.lgp.uttop.fr/ontologies/systemdesign/
+
+SELECT DISTINCT ?ressourceId (?r_name as ?ressourceName)
+WHERE {
+
+    ?f a/skos:prefLabel ?fn.
+    ?f (sysdo:hasFunctionPartAtAllTimes) ?fc.
+
+    ?fc a/skos:prefLabel ?fc_name.
+
+    ?systemId iof:hasFunction ?fc.
+    ?systemId a/skos:prefLabel ?sysName.
+    
+    ?systemId sysdo:hasLogicalSubSystemAtAllTimes ?ressourceId.
+    ?ressourceId a/skos:prefLabel ?r_name.
+    
+    
+    FILTER(str(?fn) = "Assembly of the manufactured parts")
+}
+ 
+=============Response json==============
+
+{
+  "head": {
+    "vars": [
+      "ressourceId",
+      "ressourceName"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "ressourceId": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...205945"
+        },
+        "ressourceName": {
+          "type": "literal",
+          "value": "Buffer 1_sfHCst02_asbl04"
+        }
+      },
+      {
+        "ressourceId": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...205946"
+        },
+        "ressourceName": {
+          "type": "literal",
+          "value": "Final wing assembly_sfHCst01_asbl05(a)_asbl05(b)_asbl05(c)"
+        }
+      },
+      {
+        "ressourceId": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...205943"
+        },
+        "ressourceName": {
+          "type": "literal",
+          "value": "Stiffners Assembly_sfHCst05_sfHCst04_asbl01_asbl02"
+        }
+      },
+      {
+        "ressourceId": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...205944"
+        },
+        "ressourceName": {
+          "type": "literal",
+          "value": "System Installation_sfHCst03_asbl03"
+        }
+      },
+      {
+        "ressourceId": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...205947"
+        },
+        "ressourceName": {
+          "type": "literal",
+          "value": "Storage wings_sfHCst06_asbl07"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+=======CQ3==========
+What are the functions of the Elementary metallic part manufacturing system? 
+
+=======SPARQL==========
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+PREFIX iof: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sysdo: http://www.pics.lgp.uttop.fr/ontologies/systemdesign/
+
+SELECT DISTINCT (?fc as ?FuncID) (?fc_name as ?FuncName)
+WHERE {
+    ?systemId a/skos:prefLabel ?sn.
+    ?systemId iof:hasFunction ?f.
+    ?f a/skos:prefLabel ?fn.
+    
+    #get all child functions
+    ?f (sysdo:hasFunctionPartAtAllTimes|sysdo:hasFunctionPartAtAllTimes/sysdo:hasFunctionPartAtAllTimes) ?fc.
+    ?fc a/skos:prefLabel ?fc_name.
+ 
+    FILTER(?fn != ?fc_name)
+    FILTER(str(?sn) = "Elementary metallic part manufactruing system")
+
+}
+ 
+=============Response json==============
+{
+  "head": {
+    "vars": [
+      "FuncID",
+      "FuncName"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194942"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Cutting station for spars"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194941"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Cutting station for stringers"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194940"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Stamping"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194938"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Sheet press forming"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194939"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Surface protection large"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194956"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Surface protection small"
+        }
+      }
+    ]
+  }
+}

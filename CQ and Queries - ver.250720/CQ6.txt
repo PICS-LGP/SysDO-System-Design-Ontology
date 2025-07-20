@@ -1,0 +1,90 @@
+=======CQ6==========
+What are the subactivities of sheet press forming? What is the duration of each subactivity?
+
+=======SPARQL==========
+PREFIX iof: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sysdo: http://www.pics.lgp.uttop.fr/ontologies/systemdesign/
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+PREFIX ns:<http://airbus.eu/abox/msp3/MSP3Excelab140423153407#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?subActivityId (?name as ?subActivityName) ?duration where {
+    ?systemId a/skos:prefLabel ?sn.
+    ?systemId iof:hasFunction ?f.
+    ?f (sysdo:hasFunctionPartAtAllTimes|sysdo:hasFunctionPartAtAllTimes/sysdo:hasFunctionPartAtAllTimes) ?fc.
+    ?fc bfo:BFO_0000055 ?activityId.
+    ?fc a/skos:prefLabel ?fcn.
+    ?subActivityId sysdo:processPartOf ?activityId.
+    ?subActivityId a/skos:prefLabel ?name.
+    optional{?subActivityId sysdo:hasDuration ?duration}
+    FILTER(str(?sn) = "Elementary metallic part manufactruing system")
+    FILTER(str(?fcn) = "Sheet press forming")
+}
+=============Response json==============
+{
+  "head": {
+    "vars": [
+      "subActivityId",
+      "subActivityName",
+      "duration"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "subActivityId": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313446"
+        },
+        "subActivityName": {
+          "type": "literal",
+          "value": "Trimming"
+        },
+        "duration": {
+          "type": "literal",
+          "value": "30min"
+        }
+      },
+      {
+        "subActivityId": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313429"
+        },
+        "subActivityName": {
+          "type": "literal",
+          "value": "Quality inspection area"
+        },
+        "duration": {
+          "type": "literal",
+          "value": "30min"
+        }
+      },
+      {
+        "subActivityId": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313422"
+        },
+        "subActivityName": {
+          "type": "literal",
+          "value": "Buffer raw material"
+        }
+      },
+      {
+        "subActivityId": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313428"
+        },
+        "subActivityName": {
+          "type": "literal",
+          "value": "Sheet press forming"
+        },
+        "duration": {
+          "type": "literal",
+          "value": "5min"
+        }
+      }
+    ]
+  }
+}

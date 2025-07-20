@@ -1,0 +1,366 @@
+=======CQ4==========
+ What type of input and output materials for the subactivities in ``surface protection small'' in the elementary metallic part manufacturing system?
+
+=======SPARQL==========
+PREFIX iof: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sysdo: http://www.pics.lgp.uttop.fr/ontologies/systemdesign/
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT (?fx as ?FuncID) (?fxn as ?FuncName) (?fp as ?FuncPortID) (?fpn as ?FuncPortName)  (?m as ?MaterailID) (?mn as ?MaterialName) ?dir
+where {
+    ?s a/skos:prefLabel ?sn.
+    ?s iof:hasFunction ?f.
+    ?f (sysdo:hasFunctionPartAtAllTimes|sysdo:hasFunctionPartAtAllTimes/sysdo:hasFunctionPartAtAllTimes) ?fc.
+    ?fc a/skos:prefLabel ?fcn.
+    ?fc sysdo:hasFunctionPartAtAllTimes ?fp.
+    ?fp a/skos:prefLabel ?fpn.
+    ?fp sysdo:hasMaterialType ?m.
+    ?m a/skos:prefLabel ?mn.
+    {
+        #outgoing
+        {
+           ?fp a/rdf:type sysdo:SendingFunction.
+           ?ft sysdo:specifyFunction ?fp.
+           ?ft  sysdo:specifyFunction ?fpx.
+           OPTIONAL{
+                ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
+                ?fx bfo:BFO_0000055 ?ax.
+                ?fx a/skos:prefLabel ?fxn.
+            }
+        }
+        UNION{
+           ?fp a/rdf:type sysdo:SendingFunction.
+           ?ft sysdo:specifyFunction ?fp.
+           ?ft  sysdo:specifyFunction ?fpx.
+           ?fpx a/rdf:type sysdo:ReceivingFunction.
+           OPTIONAL{
+                ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
+                ?fx bfo:BFO_0000055 ?ax.
+                ?fx a/skos:prefLabel ?fxn.
+            }
+        }
+        bind("outgoing" as ?dir)
+    }
+    UNION
+    #incoming
+    {
+        {
+            ?fp a/rdf:type sysdo:ReceivingFunction.
+            ?ft sysdo:specifyFunction ?fp.
+            ?ft sysdo:specifyFunction ?fpx.
+            OPTIONAL{
+               ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
+               ?fx bfo:BFO_0000055 ?ax.
+               ?fx a/skos:prefLabel ?fxn.
+            }
+        }
+        UNION
+        {
+           ?fp a/rdf:type sysdo:ReceivingFunction.
+           ?ft sysdo:specifyFunction ?fp.
+           ?ft  sysdo:specifyFunction ?fpx.
+           ?fpx a/rdf:type sysdo:SendingFunction.
+           OPTIONAL{
+               ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
+               ?fx bfo:BFO_0000055 ?ax.
+               ?fx a/skos:prefLabel ?fxn.
+           }
+        }
+        bind("incoming" as ?dir)
+    }
+    FILTER(str(?sn) = "Elementary metallic part manufactruing system")
+    FILTER(str(?fcn) = "Surface protection small")
+}
+
+=============Response json==============
+
+{
+  "head": {
+    "vars": [
+      "FuncID",
+      "FuncName",
+      "FuncPortID",
+      "FuncPortName",
+      "MaterailID",
+      "MaterialName",
+      "dir"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194956"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Surface protection small"
+        },
+        "FuncPortID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313381"
+        },
+        "FuncPortName": {
+          "type": "literal",
+          "value": "OUT_Stringers"
+        },
+        "MaterailID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...164666"
+        },
+        "MaterialName": {
+          "type": "literal",
+          "value": "Stringers"
+        },
+        "dir": {
+          "type": "literal",
+          "value": "outgoing"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194956"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Surface protection small"
+        },
+        "FuncPortID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313383"
+        },
+        "FuncPortName": {
+          "type": "literal",
+          "value": "OUT_Spars"
+        },
+        "MaterailID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...164665"
+        },
+        "MaterialName": {
+          "type": "literal",
+          "value": "Spars"
+        },
+        "dir": {
+          "type": "literal",
+          "value": "outgoing"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194956"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Surface protection small"
+        },
+        "FuncPortID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313382"
+        },
+        "FuncPortName": {
+          "type": "literal",
+          "value": "OUT_Ribs"
+        },
+        "MaterailID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...164664"
+        },
+        "MaterialName": {
+          "type": "literal",
+          "value": "Ribs"
+        },
+        "dir": {
+          "type": "literal",
+          "value": "outgoing"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194956"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Surface protection small"
+        },
+        "FuncPortID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313380"
+        },
+        "FuncPortName": {
+          "type": "literal",
+          "value": "IN_Spars"
+        },
+        "MaterailID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...164665"
+        },
+        "MaterialName": {
+          "type": "literal",
+          "value": "Spars"
+        },
+        "dir": {
+          "type": "literal",
+          "value": "incoming"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194942"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Cutting station for spars"
+        },
+        "FuncPortID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313380"
+        },
+        "FuncPortName": {
+          "type": "literal",
+          "value": "IN_Spars"
+        },
+        "MaterailID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...164665"
+        },
+        "MaterialName": {
+          "type": "literal",
+          "value": "Spars"
+        },
+        "dir": {
+          "type": "literal",
+          "value": "incoming"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194956"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Surface protection small"
+        },
+        "FuncPortID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313379"
+        },
+        "FuncPortName": {
+          "type": "literal",
+          "value": "IN_Stringers"
+        },
+        "MaterailID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...164666"
+        },
+        "MaterialName": {
+          "type": "literal",
+          "value": "Stringers"
+        },
+        "dir": {
+          "type": "literal",
+          "value": "incoming"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194941"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Cutting station for stringers"
+        },
+        "FuncPortID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313379"
+        },
+        "FuncPortName": {
+          "type": "literal",
+          "value": "IN_Stringers"
+        },
+        "MaterailID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...164666"
+        },
+        "MaterialName": {
+          "type": "literal",
+          "value": "Stringers"
+        },
+        "dir": {
+          "type": "literal",
+          "value": "incoming"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194956"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Surface protection small"
+        },
+        "FuncPortID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313378"
+        },
+        "FuncPortName": {
+          "type": "literal",
+          "value": "IN_Ribs"
+        },
+        "MaterailID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...164664"
+        },
+        "MaterialName": {
+          "type": "literal",
+          "value": "Ribs"
+        },
+        "dir": {
+          "type": "literal",
+          "value": "incoming"
+        }
+      },
+      {
+        "FuncID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...194940"
+        },
+        "FuncName": {
+          "type": "literal",
+          "value": "Stamping"
+        },
+        "FuncPortID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313378"
+        },
+        "FuncPortName": {
+          "type": "literal",
+          "value": "IN_Ribs"
+        },
+        "MaterailID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...164664"
+        },
+        "MaterialName": {
+          "type": "literal",
+          "value": "Ribs"
+        },
+        "dir": {
+          "type": "literal",
+          "value": "incoming"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+=======CQ1==========
+What are the preceding activity and succeeding activities of trimming during sheet press forming?
+
+=======SPARQL==========
+PREFIX iof: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sysdo: <http://www.pics.lgp.uttop.fr/ontologies/systemdesign/>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+PREFIX ns:<http://airbus.eu/abox/msp3/MSP3Excelab140423153407#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT (?ab as ?PrecedingProcessID) (?abn as ?PrecedingProcessLabel) (?an as ?SucceedingProcessID) (?ann as ?SucceedingProcessLabel)
+where {
+	?ax rdf:type iof:PlannedProcess.
+    ?ax a/skos:prefLabel ?a_name.
+
+    OPTIONAL{
+        ?ax sysdo:hasOutputState ?op.
+        ?tnn sysdo:hasInputState ?op.
+        ?tnn sysdo:hasOutputState ?tno.
+        OPTIONAL{
+            ?an sysdo:hasInputState ?tno.
+            ?an a/skos:prefLabel ?ann
+        }
+    }
+    OPTIONAL
+    {
+        ?ax sysdo:hasInputState ?ip.
+        ?tnb sysdo:hasOutputState ?ip.
+        ?tnb sysdo:hasInputState ?tni.
+        OPTIONAL{
+            ?ab sysdo:hasOutputState ?tni.
+            ?ab a/skos:prefLabel ?abn
+        }
+    }
+    filter(str(?a_name) = "Trimming")
+    filter(?ax = <http://airbus.eu/abox/msp3/...313446>)
+}
+
+
+=============Response json==============
+
+{
+  "head": {
+    "vars": [
+      "PrecedingProcessID",
+      "PrecedingProcessLabel",
+      "SucceedingProcessID",
+      "SucceedingProcessLabel"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "PrecedingProcessID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313428"
+        },
+        "PrecedingProcessLabel": {
+          "type": "literal",
+          "value": "Sheet press forming"
+        },
+        "SucceedingProcessID": {
+          "type": "uri",
+          "value": "http://airbus.eu/abox/msp3/...313429"
+        },
+        "SucceedingProcessLabel": {
+          "type": "literal",
+          "value": "Quality inspection area"
+        }
+      }
+    ]
+  }
+}
