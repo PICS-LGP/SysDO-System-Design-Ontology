@@ -12,14 +12,14 @@ PREFIX sysdo: <http://www.pics.lgp.uttop.fr/ontologies/systemdesign/>
 SELECT DISTINCT (?sc as ?HangarID) (?scn as ?HangarName)
 WHERE {
     GRAPH ?graph{
-        ?s a/rdf:type iof:System.
-        ?s a/rdfs:label ?sn.
+        ?s rdf:type iof:System.
+        ?s rdfs:label ?sn.
         
-        ?f a/rdf:type sysdo:SystemFunction.
-        ?f a/rdfs:label ?fn.
+        ?f rdf:type sysdo:SystemFunction.
+        ?f rdfs:label ?fn.
         ?s iof:hasFunction ?f.
         ?s sysdo:hasLogicalSubSystemAtAllTimes ?sc.
-        ?sc a/rdfs:label ?scn
+        ?sc rdfs:label ?scn
         
         FILTER (str(?fn) = "Manufacturing Elementary Part")
     }
@@ -40,7 +40,7 @@ WHERE {
       {
         "HangarID": {
           "type": "uri",
-          "value": "https://airbus.eu/semhub/data/airbus/...1844"
+          "value": "https://airbus.eu/semhub/datairbus/...1844"
         },
         "HangarName": {
           "type": "literal",

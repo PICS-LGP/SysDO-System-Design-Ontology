@@ -11,13 +11,13 @@ PREFIX ns:<http://airbus.eu/abox/msp3/MSP3Excelab140423153407#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT DISTINCT ?subActivityId (?name as ?subActivityName) ?duration where {
-    ?systemId a/skos:prefLabel ?sn.
+    ?systemId skos:prefLabel ?sn.
     ?systemId iof:hasFunction ?f.
     ?f (sysdo:hasFunctionPartAtAllTimes|sysdo:hasFunctionPartAtAllTimes/sysdo:hasFunctionPartAtAllTimes) ?fc.
     ?fc bfo:BFO_0000055 ?activityId.
-    ?fc a/skos:prefLabel ?fcn.
+    ?fc skos:prefLabel ?fcn.
     ?subActivityId sysdo:processPartOf ?activityId.
-    ?subActivityId a/skos:prefLabel ?name.
+    ?subActivityId skos:prefLabel ?name.
     optional{?subActivityId sysdo:hasDuration ?duration}
     FILTER(str(?sn) = "Elementary metallic part manufactruing system")
     FILTER(str(?fcn) = "Sheet press forming")

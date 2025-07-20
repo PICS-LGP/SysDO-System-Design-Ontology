@@ -11,14 +11,14 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT DISTINCT (?fx as ?FuncID) (?fxn as ?FuncName) (?fp as ?FuncPortID) (?fpn as ?FuncPortName)  (?m as ?MaterailID) (?mn as ?MaterialName) ?dir
 where {
-    ?s a/skos:prefLabel ?sn.
+    ?s skos:prefLabel ?sn.
     ?s iof:hasFunction ?f.
     ?f (sysdo:hasFunctionPartAtAllTimes|sysdo:hasFunctionPartAtAllTimes/sysdo:hasFunctionPartAtAllTimes) ?fc.
-    ?fc a/skos:prefLabel ?fcn.
+    ?fc skos:prefLabel ?fcn.
     ?fc sysdo:hasFunctionPartAtAllTimes ?fp.
-    ?fp a/skos:prefLabel ?fpn.
+    ?fp skos:prefLabel ?fpn.
     ?fp sysdo:hasMaterialType ?m.
-    ?m a/skos:prefLabel ?mn.
+    ?m skos:prefLabel ?mn.
     {
         #outgoing
         {
@@ -28,7 +28,7 @@ where {
            OPTIONAL{
                 ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
                 ?fx bfo:BFO_0000055 ?ax.
-                ?fx a/skos:prefLabel ?fxn.
+                ?fx skos:prefLabel ?fxn.
             }
         }
         UNION{
@@ -39,7 +39,7 @@ where {
            OPTIONAL{
                 ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
                 ?fx bfo:BFO_0000055 ?ax.
-                ?fx a/skos:prefLabel ?fxn.
+                ?fx skos:prefLabel ?fxn.
             }
         }
         bind("outgoing" as ?dir)
@@ -54,7 +54,7 @@ where {
             OPTIONAL{
                ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
                ?fx bfo:BFO_0000055 ?ax.
-               ?fx a/skos:prefLabel ?fxn.
+               ?fx skos:prefLabel ?fxn.
             }
         }
         UNION
@@ -66,7 +66,7 @@ where {
            OPTIONAL{
                ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
                ?fx bfo:BFO_0000055 ?ax.
-               ?fx a/skos:prefLabel ?fxn.
+               ?fx skos:prefLabel ?fxn.
            }
         }
         bind("incoming" as ?dir)

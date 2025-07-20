@@ -13,7 +13,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT DISTINCT (?ab as ?PrecedingProcessID) (?abn as ?PrecedingProcessLabel) (?an as ?SucceedingProcessID) (?ann as ?SucceedingProcessLabel)
 where {
 	?ax rdf:type iof:PlannedProcess.
-    ?ax a/skos:prefLabel ?a_name.
+    ?ax skos:prefLabel ?a_name.
 
     OPTIONAL{
         ?ax sysdo:hasOutputState ?op.
@@ -21,7 +21,7 @@ where {
         ?tnn sysdo:hasOutputState ?tno.
         OPTIONAL{
             ?an sysdo:hasInputState ?tno.
-            ?an a/skos:prefLabel ?ann
+            ?an skos:prefLabel ?ann
         }
     }
     OPTIONAL
@@ -31,7 +31,7 @@ where {
         ?tnb sysdo:hasInputState ?tni.
         OPTIONAL{
             ?ab sysdo:hasOutputState ?tni.
-            ?ab a/skos:prefLabel ?abn
+            ?ab skos:prefLabel ?abn
         }
     }
     filter(str(?a_name) = "Trimming")

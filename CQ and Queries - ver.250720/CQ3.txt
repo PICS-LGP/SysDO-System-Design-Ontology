@@ -11,13 +11,13 @@ PREFIX sysdo: http://www.pics.lgp.uttop.fr/ontologies/systemdesign/
 
 SELECT DISTINCT (?fc as ?FuncID) (?fc_name as ?FuncName)
 WHERE {
-    ?systemId a/skos:prefLabel ?sn.
+    ?systemId skos:prefLabel ?sn.
     ?systemId iof:hasFunction ?f.
-    ?f a/skos:prefLabel ?fn.
+    ?f skos:prefLabel ?fn.
     
     #get all child functions
     ?f (sysdo:hasFunctionPartAtAllTimes|sysdo:hasFunctionPartAtAllTimes/sysdo:hasFunctionPartAtAllTimes) ?fc.
-    ?fc a/skos:prefLabel ?fc_name.
+    ?fc skos:prefLabel ?fc_name.
  
     FILTER(?fn != ?fc_name)
     FILTER(str(?sn) = "Elementary metallic part manufactruing system")
