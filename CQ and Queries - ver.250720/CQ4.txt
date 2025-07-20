@@ -11,35 +11,35 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT DISTINCT (?fx as ?FuncID) (?fxn as ?FuncName) (?fp as ?FuncPortID) (?fpn as ?FuncPortName)  (?m as ?MaterailID) (?mn as ?MaterialName) ?dir
 where {
-    ?s skos:prefLabel ?sn.
+    ?s a/skos:prefLabel ?sn.
     ?s iof:hasFunction ?f.
     ?f (sysdo:hasFunctionPartAtAllTimes|sysdo:hasFunctionPartAtAllTimes/sysdo:hasFunctionPartAtAllTimes) ?fc.
-    ?fc skos:prefLabel ?fcn.
+    ?fc a/skos:prefLabel ?fcn.
     ?fc sysdo:hasFunctionPartAtAllTimes ?fp.
-    ?fp skos:prefLabel ?fpn.
+    ?fp a/skos:prefLabel ?fpn.
     ?fp sysdo:hasMaterialType ?m.
-    ?m skos:prefLabel ?mn.
+    ?m a/skos:prefLabel ?mn.
     {
         #outgoing
         {
-           ?fp a/rdf:type sysdo:SendingFunction.
+           ?fp a/rdfs:subClassOf sysdo:SendingFunction.
            ?ft sysdo:specifyFunction ?fp.
            ?ft  sysdo:specifyFunction ?fpx.
            OPTIONAL{
                 ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
                 ?fx bfo:BFO_0000055 ?ax.
-                ?fx skos:prefLabel ?fxn.
+                ?fx a/skos:prefLabel ?fxn.
             }
         }
         UNION{
-           ?fp a/rdf:type sysdo:SendingFunction.
+           ?fp a/rdfs:subClassOf sysdo:SendingFunction.
            ?ft sysdo:specifyFunction ?fp.
            ?ft  sysdo:specifyFunction ?fpx.
-           ?fpx a/rdf:type sysdo:ReceivingFunction.
+           ?fpx a/rdfs:subClassOf sysdo:ReceivingFunction.
            OPTIONAL{
                 ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
                 ?fx bfo:BFO_0000055 ?ax.
-                ?fx skos:prefLabel ?fxn.
+                ?fx a/skos:prefLabel ?fxn.
             }
         }
         bind("outgoing" as ?dir)
@@ -48,25 +48,25 @@ where {
     #incoming
     {
         {
-            ?fp a/rdf:type sysdo:ReceivingFunction.
+            ?fp a/rdfs:subClassOf sysdo:ReceivingFunction.
             ?ft sysdo:specifyFunction ?fp.
             ?ft sysdo:specifyFunction ?fpx.
             OPTIONAL{
                ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
                ?fx bfo:BFO_0000055 ?ax.
-               ?fx skos:prefLabel ?fxn.
+               ?fx a/skos:prefLabel ?fxn.
             }
         }
         UNION
         {
-           ?fp a/rdf:type sysdo:ReceivingFunction.
+           ?fp a/rdfs:subClassOf sysdo:ReceivingFunction.
            ?ft sysdo:specifyFunction ?fp.
            ?ft  sysdo:specifyFunction ?fpx.
-           ?fpx a/rdf:type sysdo:SendingFunction.
+           ?fpx a/rdfs:subClassOf sysdo:SendingFunction.
            OPTIONAL{
                ?fx sysdo:hasFunctionPartAtAllTimes ?fpx.
                ?fx bfo:BFO_0000055 ?ax.
-               ?fx skos:prefLabel ?fxn.
+               ?fx a/skos:prefLabel ?fxn.
            }
         }
         bind("incoming" as ?dir)

@@ -13,16 +13,16 @@ PREFIX sysdo: http://www.pics.lgp.uttop.fr/ontologies/systemdesign/
 SELECT DISTINCT ?ressourceId (?r_name as ?ressourceName)
 WHERE {
 
-    ?f skos:prefLabel ?fn.
+    ?f a/skos:prefLabel ?fn.
     ?f (sysdo:hasFunctionPartAtAllTimes) ?fc.
 
-    ?fc skos:prefLabel ?fc_name.
+    ?fc a/skos:prefLabel ?fc_name.
 
     ?systemId iof:hasFunction ?fc.
-    ?systemId skos:prefLabel ?sysName.
+    ?systemId a/skos:prefLabel ?sysName.
     
     ?systemId sysdo:hasLogicalSubSystemAtAllTimes ?ressourceId.
-    ?ressourceId skos:prefLabel ?r_name.
+    ?ressourceId a/skos:prefLabel ?r_name.
     
     
     FILTER(str(?fn) = "Assembly of the manufactured parts")
