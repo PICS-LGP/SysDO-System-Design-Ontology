@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#"
-     xml:base="http://www.pics.lgp.uttop.fr/ontologies/systemdesign"
+<rdf:RDF xmlns="http://www.pics.lgp.uttop.fr/placeholder#"
+     xml:base="http://www.pics.lgp.uttop.fr/placeholder"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -91,6 +91,12 @@
     
 
 
+    <!-- https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom"/>
+    
+
+
     <!-- https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition -->
 
     <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"/>
@@ -147,6 +153,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000108"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000121 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000121"/>
     
 
 
@@ -246,6 +258,15 @@
 
     <owl:ObjectProperty rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:label>has logical subsystem as some time</rdfs:label>
         <skos:definition>a has logical subsystem b = a, b are both logical systems, and logical system b is a part of logical system a that make its logic complet</skos:definition>
     </owl:ObjectProperty>
@@ -341,6 +362,12 @@
         <rdfs:label xml:lang="en">has duration</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition>&apos;has duration&apos; is the temporal duration for a planned process, whereas its unit has to be declared such as second or minute</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/hasSimpleExpressionValue -->
+
+    <owl:DatatypeProperty rdf:about="https://spec.industrialontologies.org/ontology/core/Core/hasSimpleExpressionValue"/>
     
 
 
