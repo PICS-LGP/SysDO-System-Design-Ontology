@@ -1,0 +1,2364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.pics.lgp.uttop.fr/placeholder#"
+	xmlns:agg="http://jena.apache.org/ARQ/function/aggregate#"
+	xmlns:sail="http://www.openrdf.org/config/sail#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:geof="http://www.opengis.net/def/function/geosparql/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:spif="http://spinrdf.org/spif#"
+	xmlns:path="http://www.ontotext.com/path#"
+	xmlns:array="http://www.w3.org/2005/xpath-functions/array"
+	xmlns:sysdo="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:apf="http://jena.apache.org/ARQ/property#"
+	xmlns:iof-ind="https://spec.industrialontologies.org/ontology/individual/"
+	xmlns:iof-av="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:rep="http://www.openrdf.org/config/repository#"
+	xmlns:map="http://www.w3.org/2005/xpath-functions/map"
+	xmlns:sr="http://www.openrdf.org/config/repository/sail#"
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:gn="http://www.geonames.org/ontology#"
+	xmlns:afn="http://jena.apache.org/ARQ/function#"
+	xmlns:bfo="http://purl.obolibrary.org/obo/"
+	xmlns:iof-core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:list="http://jena.apache.org/ARQ/list#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ofn="http://www.ontotext.com/sparql/functions/"
+	xmlns:geoext="http://rdf.useekm.com/ext#"
+	xmlns:graphdb="http://www.ontotext.com/config/graphdb#"
+	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+	xmlns:omgeo="http://www.ontotext.com/owlim/geo#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#example">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000063">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000199">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000108">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000170">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000082">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000203">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000221">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000223">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/annotation/explanatoryNote">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/annotation/firstOrderLogicAxiom">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/annotation/naturalLanguageDefinition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/license">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000121">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000171">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000178">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#handlesMaterial">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtAllTimes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasInputState">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtAllTimes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1542">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasOutputState">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtAllTimes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasAmountOfWorkers">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasDuration">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1545">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlEndProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1546">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1548">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#InformationFlow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowDecisionProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowForkProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowJoinProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowMergeProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlStartProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1550">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1552">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlTransferProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1554">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1555">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1556">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionFlowSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionPrecedenceSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1557">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1558">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1560">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1562">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowDecisionProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowForkProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowJoinProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowMergeProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSinkProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1563">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1565">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSourceProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1567">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1569">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialTransferProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1571">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1573">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1575">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1577">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1580">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1582">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1584">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1586">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1588">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1590">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1592">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1595">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1598">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1600">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1602">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1604">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1606">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1608">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1610">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1613">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1615">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1617">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1618">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1619">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1620">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1621">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1623">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1625">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1627">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1629">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1631">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1633">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1634">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1636">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1638">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1640">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1642">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFlowSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1643">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1645">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1647">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1648">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1649">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemPrecedenceSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1650">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1651">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1652">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1653">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1655">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1657">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1659">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1661">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1663">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1665">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1667">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1669">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1671">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1673">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1675">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1677">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/InformationContentEntity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/functionOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/prescribedBy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/PlannedProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/PlanSpecification">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/prescribes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/System">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/MaterialLocationChangeProcess">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/hasFunction">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/hasSimpleExpressionValue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#handlesMaterial">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtAllTimes">
+	<rdfs:subPropertyOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime">
+	<rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasInputState">
+	<rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtAllTimes">
+	<rdfs:subPropertyOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime">
+	<rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasOutputState">
+	<rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtAllTimes">
+	<rdfs:subPropertyOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime">
+	<rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasAmountOfWorkers">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasDuration">
+	<rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasSimpleExpressionValue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+	<rdfs:subClassOf rdf:nodeID="node1545"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+	<rdfs:subClassOf rdf:nodeID="node1618"/>
+	<rdfs:subClassOf rdf:nodeID="node1619"/>
+	<rdfs:subClassOf rdf:nodeID="node1620"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlEndProcess">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#InformationFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#InformationFlow">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowDecisionProcess">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowForkProcess">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowJoinProcess">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowMergeProcess">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlStartProcess">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlTransferProcess">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+	<rdfs:subClassOf rdf:nodeID="node1554"/>
+	<rdfs:subClassOf rdf:nodeID="node1555"/>
+	<rdfs:subClassOf rdf:nodeID="node1556"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+	<rdfs:subClassOf rdf:nodeID="node1633"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+	<rdfs:subClassOf rdf:nodeID="node1642"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionFlowSpecification">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionPrecedenceSpecification">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification"/>
+	<rdfs:subClassOf rdf:nodeID="node1557"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+	<rdfs:subClassOf rdf:nodeID="node1647"/>
+	<rdfs:subClassOf rdf:nodeID="node1648"/>
+	<rdfs:subClassOf rdf:nodeID="node1649"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+	<rdfs:subClassOf rdf:nodeID="node1562"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowDecisionProcess">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowForkProcess">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowJoinProcess">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowMergeProcess">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSinkProcess">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSourceProcess">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialTransferProcess">
+	<rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+	<rdfs:subClassOf rdf:nodeID="node1617"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFlowSpecification">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemPrecedenceSpecification">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification"/>
+	<rdfs:subClassOf rdf:nodeID="node1650"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1653">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFlowSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1661">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionFlowSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1669">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1673">
+	<rdfs:subClassOf rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/construct/System">
+	<rdfs:subClassOf rdf:nodeID="node1651"/>
+	<rdfs:subClassOf rdf:nodeID="node1652"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#handlesMaterial">
+	<rdfs:domain rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime">
+	<rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasInputState">
+	<rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime">
+	<rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasOutputState">
+	<rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime">
+	<rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasAmountOfWorkers">
+	<rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasDuration">
+	<rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#handlesMaterial">
+	<rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime">
+	<rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasInputState">
+	<rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime">
+	<rdfs:range rdf:nodeID="node1542"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasOutputState">
+	<rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime">
+	<rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasAmountOfWorkers">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasDuration">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction">
+	<owl:equivalentClass rdf:nodeID="node1621"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlEndProcess">
+	<owl:equivalentClass rdf:nodeID="node1546"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlStartProcess">
+	<owl:equivalentClass rdf:nodeID="node1550"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification">
+	<owl:equivalentClass rdf:nodeID="node1629"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification">
+	<owl:equivalentClass rdf:nodeID="node1638"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction">
+	<owl:equivalentClass rdf:nodeID="node1643"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort">
+	<owl:equivalentClass rdf:nodeID="node1558"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction">
+	<owl:equivalentClass rdf:nodeID="node1625"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSinkProcess">
+	<owl:equivalentClass rdf:nodeID="node1563"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSourceProcess">
+	<owl:equivalentClass rdf:nodeID="node1567"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialTransferProcess">
+	<owl:equivalentClass rdf:nodeID="node1571"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort">
+	<owl:equivalentClass rdf:nodeID="node1613"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction">
+	<owl:equivalentClass rdf:nodeID="node1634"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1579">
+	<owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000170"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1594">
+	<owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000199"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1597">
+	<owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000170"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1612">
+	<owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000199"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1543">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1544">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1547">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1549">
+	<rdf:first rdf:nodeID="node1548"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1551">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1553">
+	<rdf:first rdf:nodeID="node1552"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1559">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1561">
+	<rdf:first rdf:nodeID="node1560"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1566">
+	<rdf:first rdf:nodeID="node1565"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1570">
+	<rdf:first rdf:nodeID="node1569"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1574">
+	<rdf:first rdf:nodeID="node1573"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1576">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1578">
+	<rdf:first rdf:nodeID="node1577"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1581">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1583">
+	<rdf:first rdf:nodeID="node1582"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1585">
+	<rdf:first rdf:nodeID="node1584"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1587">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000203"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1589">
+	<rdf:first rdf:nodeID="node1588"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1591">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1593">
+	<rdf:first rdf:nodeID="node1592"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1596">
+	<rdf:first rdf:nodeID="node1595"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1599">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1601">
+	<rdf:first rdf:nodeID="node1600"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1603">
+	<rdf:first rdf:nodeID="node1602"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1605">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000203"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1607">
+	<rdf:first rdf:nodeID="node1606"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1609">
+	<rdf:first rdf:nodeID="node1608"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1611">
+	<rdf:first rdf:nodeID="node1610"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1614">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1616">
+	<rdf:first rdf:nodeID="node1615"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1622">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1624">
+	<rdf:first rdf:nodeID="node1623"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1626">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1628">
+	<rdf:first rdf:nodeID="node1627"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1630">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1632">
+	<rdf:first rdf:nodeID="node1631"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1635">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1637">
+	<rdf:first rdf:nodeID="node1636"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1639">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1641">
+	<rdf:first rdf:nodeID="node1640"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1644">
+	<rdf:first rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1646">
+	<rdf:first rdf:nodeID="node1645"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1654">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1656">
+	<rdf:first rdf:nodeID="node1655"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1658">
+	<rdf:first rdf:nodeID="node1657"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1660">
+	<rdf:first rdf:nodeID="node1659"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1662">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1664">
+	<rdf:first rdf:nodeID="node1663"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1666">
+	<rdf:first rdf:nodeID="node1665"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1668">
+	<rdf:first rdf:nodeID="node1667"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1672">
+	<rdf:first rdf:nodeID="node1671"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1676">
+	<rdf:first rdf:nodeID="node1675"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1678">
+	<rdf:first rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1543">
+	<rdf:rest rdf:nodeID="node1544"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1544">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1547">
+	<rdf:rest rdf:nodeID="node1549"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1549">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1551">
+	<rdf:rest rdf:nodeID="node1553"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1553">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1559">
+	<rdf:rest rdf:nodeID="node1561"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1561">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1564">
+	<rdf:rest rdf:nodeID="node1566"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1566">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1568">
+	<rdf:rest rdf:nodeID="node1570"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1570">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1572">
+	<rdf:rest rdf:nodeID="node1574"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1574">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1576">
+	<rdf:rest rdf:nodeID="node1578"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1578">
+	<rdf:rest rdf:nodeID="node1596"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1581">
+	<rdf:rest rdf:nodeID="node1583"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1583">
+	<rdf:rest rdf:nodeID="node1585"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1585">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1587">
+	<rdf:rest rdf:nodeID="node1589"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1589">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1591">
+	<rdf:rest rdf:nodeID="node1593"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1593">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1596">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1599">
+	<rdf:rest rdf:nodeID="node1601"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1601">
+	<rdf:rest rdf:nodeID="node1603"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1603">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1605">
+	<rdf:rest rdf:nodeID="node1607"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1607">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1609">
+	<rdf:rest rdf:nodeID="node1611"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1611">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1614">
+	<rdf:rest rdf:nodeID="node1616"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1616">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1622">
+	<rdf:rest rdf:nodeID="node1624"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1624">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1626">
+	<rdf:rest rdf:nodeID="node1628"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1628">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1630">
+	<rdf:rest rdf:nodeID="node1632"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1632">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1635">
+	<rdf:rest rdf:nodeID="node1637"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1637">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1639">
+	<rdf:rest rdf:nodeID="node1641"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1641">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1644">
+	<rdf:rest rdf:nodeID="node1646"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1646">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1654">
+	<rdf:rest rdf:nodeID="node1656"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1656">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1658">
+	<rdf:rest rdf:nodeID="node1660"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1660">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1662">
+	<rdf:rest rdf:nodeID="node1664"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1664">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1666">
+	<rdf:rest rdf:nodeID="node1668"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1668">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1670">
+	<rdf:rest rdf:nodeID="node1672"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1672">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1674">
+	<rdf:rest rdf:nodeID="node1676"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1676">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1678">
+	<rdf:rest rdf:nodeID="node1679"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1679">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign">
+	<rdfs:comment xml:lang="en">This is an ontology developping for system design model, for example activity diagram and component diagram. It follows BFO and IOF. The prefix "SysDO" signifies "system design ontology" for abbreviation.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction">
+	<rdfs:comment>port function</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort">
+	<rdfs:comment xml:lang="en">Through incoming port p1, component C receives data</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort">
+	<rdfs:comment xml:lang="en">Through outgoing port p1, component C sends data the its next stop</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign">
+	<rdfs:label xml:lang="en">System Design Ontology</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#handlesMaterial">
+	<rdfs:label xml:lang="en">handles material</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port">
+	<rdfs:label>port</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtAllTimes">
+	<rdfs:label>has function part at all times</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime">
+	<rdfs:label>has function part at some time</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasInputState">
+	<rdfs:label xml:lang="en">has input state</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtAllTimes">
+	<rdfs:label>has logical subsystem at all times</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime">
+	<rdfs:label>has logical subsystem as some time</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasOutputState">
+	<rdfs:label xml:lang="en">has output state</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtAllTimes">
+	<rdfs:label>has subsystem at all times</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime">
+	<rdfs:label>has subsystem at some time</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasAmountOfWorkers">
+	<rdfs:label xml:lang="en">has amount of worker</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasDuration">
+	<rdfs:label xml:lang="en">has duration</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlEndProcess">
+	<rdfs:label>control end process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow">
+	<rdfs:label>control flow</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#InformationFlow">
+	<rdfs:label>information flow</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowDecisionProcess">
+	<rdfs:label>control flow decision process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowForkProcess">
+	<rdfs:label>control flow fork process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowJoinProcess">
+	<rdfs:label>control flow join process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowMergeProcess">
+	<rdfs:label>control flow merge process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlStartProcess">
+	<rdfs:label>control start process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlTransferProcess">
+	<rdfs:label>control transfer process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow">
+	<rdfs:label>flow</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification">
+	<rdfs:label>flow specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification">
+	<rdfs:label>receiving function specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification">
+	<rdfs:label>sending function specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionFlowSpecification">
+	<rdfs:label>function flow specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionPrecedenceSpecification">
+	<rdfs:label>function precedence specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification">
+	<rdfs:label>precedence specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction">
+	<rdfs:label>system function</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification">
+	<rdfs:label>function specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort">
+	<rdfs:label>incoming Port</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction">
+	<rdfs:label>receiving function</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowDecisionProcess">
+	<rdfs:label>material flow decision process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowForkProcess">
+	<rdfs:label>material flow fork process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowJoinProcess">
+	<rdfs:label>material flow join process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowMergeProcess">
+	<rdfs:label>material flow merge process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSinkProcess">
+	<rdfs:label>material sink process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSourceProcess">
+	<rdfs:label>material source process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialTransferProcess">
+	<rdfs:label>material transfer process</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort">
+	<rdfs:label>outgoing port</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction">
+	<rdfs:label>sending function</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFlowSpecification">
+	<rdfs:label>system flow specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemPrecedenceSpecification">
+	<rdfs:label>system precedence specification</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign">
+	<terms:abstract xml:lang="en">The System Design(SD) Ontology is designed to encapsulate the essential elements of system design, particularly within aerospace applications. It integrates Basic Formal Ontology (BFO) and IOF-Core to provide a basis for modeling the technical, functional, and operational aspects of complex systems. SD ontology defines terms related to system components, functions, and processes, supporting both decomposition of systems into sub-systems and modeling interactions such as material and control flows. Its amis to ensure a common understanding in system design such that multidisciplinary cooperation could be improved.</terms:abstract>
+	<terms:creator xml:lang="en">Zhengyu Liu, University of Technology of Tarbes</terms:creator>
+	<terms:publisher xml:lang="fr">Laboratoire Genie Production,UNIVERSITÉ DE TECHNOLOGIE TARBES OCCITANIE PYRÉNÉES</terms:publisher>
+	<terms:title xml:lang="en">System Design Ontology (SysDO)</terms:title>
+	<owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202401/core/Core/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port">
+	<skos:example xml:lang="en">A component C has two ports, p1 and p2. Through p1, C receives input data . After processing, C sends the output data through p2 to the next component in the system.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction">
+	<skos:example xml:lang="en">Basic function of a port can be either sending or receiving data as specified in its subclasses</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlEndProcess">
+	<skos:example xml:lang="en">The control end process e, where the input is a control flow x. Once x reaches e, the process halts, with no further actions or activities in the system beyond this point.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow">
+	<skos:example xml:lang="en">Control flow often trigger state changes or actions in the receiving components. sometimes they are represented as special types of information flows, but they are distinguished by their purpose of influencing system behavior rather than just transferring data.</skos:example>
+	<skos:example xml:lang="en">signal from central controller to end actuator</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#InformationFlow">
+	<skos:example xml:lang="en">The rolling speed of wheels are captured to sensors and presented on screen</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowDecisionProcess">
+	<skos:example xml:lang="en">The control flow decision process d, where the input is a control flow f. If the condition evaluated at d is true, the flow is directed to path p1; if false, it is directed to path p2.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowForkProcess">
+	<skos:example xml:lang="en">The fork process f, where the input is a single flow x. At f, the flow x is split into two parallel flows, x1 and x2, which are executed simultaneously.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowJoinProcess">
+	<skos:example xml:lang="en">The control flow joint process j, where the inputs are two control flows x1 and x2. Once both x1 and x2 complete, they are merged into a single flow y that is the output of j.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowMergeProcess">
+	<skos:example xml:lang="en">The merge process m, where the inputs are flows a, b, and c. When any one of these flows is activated, the process continues with a single flow d, not necessarily waiting for all inputs to complete.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlStartProcess">
+	<skos:example xml:lang="en">The start process s, which has no input flow. Once triggered, it generates an output flow x that initiates the execution of the all the subsequent activities in the system.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlTransferProcess">
+	<skos:example xml:lang="en">The transfer process t, where control flow x is passed from component a to component b. Once a completes its execution, control flow x is handed over to b for further processing.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow">
+	<skos:example xml:lang="en">In a car manufacturing plant design model, the designed movement of car bodies along the assembly line from one workstation to another</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification">
+	<skos:example xml:lang="en">A manual of drink production line the movement of bottles through the production line, detailing the rate of flow, the routing between stations</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification">
+	<skos:example xml:lang="en">Receiving function of port p1 accepts only pdf file</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification">
+	<skos:example xml:lang="en">sending function of port p1 send only int data</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionFlowSpecification">
+	<skos:example xml:lang="en">In a function flow specification FS1, flow f1 is designed to start by  the sending function A  via port p1</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionPrecedenceSpecification">
+	<skos:example xml:lang="en">function f1 f2 f3 must be triggered respectively, that is f1 precedes f2 that precedes f3</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction">
+	<skos:example xml:lang="en">the Anti-lock braking system (ABS) of a car's function is to prevent wheel lockup during hard braking</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification">
+	<skos:example xml:lang="en">A manual in car manufacturing plant on the series of welding operations required to assemble the car body</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowDecisionProcess">
+	<skos:example xml:lang="en">In the material flow decision process p1, material M is at location L1. The system evaluates whether the material meets a specific condition, for example weight. If the condition is satisfied, the material is directed to location L2; if not, it is sent to location L3.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowForkProcess">
+	<skos:example xml:lang="en">In the material flow fork process p1, material M at location L1 is split into two concurrent flows. One part of M, m1 is sent to location L2 for processing, while another part m2 is simultaneously sent to location L3. Both flows occur in parallel, enabling multiple operations to be carried out on the material.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowJoinProcess">
+	<skos:example xml:lang="en">In the material flow joint process p1, materials M1 from location L1 and M2 from location L2 are combined into a single flow at location L3. The process waits for both M1 and M2 to arrive at L3 before proceeding</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowMergeProcess">
+	<skos:example xml:lang="en">In the material flow merge process p1, materials M1 from location L1, M2 from location L2, and M3 from location L3 are merged into a single flow at location L4. As soon as any one of M1, M2, or M3 arrives at L4 the process continues without waiting for all materials to arrive.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSinkProcess">
+	<skos:example xml:lang="en">The material sink process p1, where the input is a material flow x. Once x reaches e, the material location change process halts, with no further actions or activities in the system beyond this point.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSourceProcess">
+	<skos:example xml:lang="en">The source process p1, which has no input flow. Once triggered, it generates an output material location change flow x that initiates the execution of the all the subsequent activities in the system.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialTransferProcess">
+	<skos:example xml:lang="en">In the material transfer process p1, material M is transferred from station S1to station S2.</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFlowSpecification">
+	<skos:example xml:lang="en">In a system flow specification SS1, the flow f1 starts at the outgoing port p1 of system X</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemPrecedenceSpecification">
+	<skos:example xml:lang="en">In a system precedence specification SS1, system s1 must complete its processing before system s2 can initiate. that is s1 precedes s2</skos:example>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1546">
+	<owl:intersectionOf rdf:nodeID="node1547"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1550">
+	<owl:intersectionOf rdf:nodeID="node1551"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1558">
+	<owl:intersectionOf rdf:nodeID="node1559"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1563">
+	<owl:intersectionOf rdf:nodeID="node1564"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1567">
+	<owl:intersectionOf rdf:nodeID="node1568"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1571">
+	<owl:intersectionOf rdf:nodeID="node1572"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1575">
+	<owl:intersectionOf rdf:nodeID="node1576"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1580">
+	<owl:intersectionOf rdf:nodeID="node1581"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1586">
+	<owl:intersectionOf rdf:nodeID="node1587"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1590">
+	<owl:intersectionOf rdf:nodeID="node1591"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1598">
+	<owl:intersectionOf rdf:nodeID="node1599"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1604">
+	<owl:intersectionOf rdf:nodeID="node1605"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1606">
+	<owl:intersectionOf rdf:nodeID="node1609"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1613">
+	<owl:intersectionOf rdf:nodeID="node1614"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1621">
+	<owl:intersectionOf rdf:nodeID="node1622"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1625">
+	<owl:intersectionOf rdf:nodeID="node1626"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1629">
+	<owl:intersectionOf rdf:nodeID="node1630"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1634">
+	<owl:intersectionOf rdf:nodeID="node1635"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1638">
+	<owl:intersectionOf rdf:nodeID="node1639"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1643">
+	<owl:intersectionOf rdf:nodeID="node1644"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1653">
+	<owl:intersectionOf rdf:nodeID="node1654"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1655">
+	<owl:intersectionOf rdf:nodeID="node1658"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1661">
+	<owl:intersectionOf rdf:nodeID="node1662"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1663">
+	<owl:intersectionOf rdf:nodeID="node1666"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1669">
+	<owl:intersectionOf rdf:nodeID="node1670"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1673">
+	<owl:intersectionOf rdf:nodeID="node1674"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1542">
+	<owl:unionOf rdf:nodeID="node1543"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1677">
+	<owl:unionOf rdf:nodeID="node1678"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1545">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1548">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1552">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1554">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1555">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1565">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1569">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1573">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1577">
+	<owl:onProperty rdf:nodeID="node1579"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1582">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1584">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1588">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000223"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1592">
+	<owl:onProperty rdf:nodeID="node1594"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1595">
+	<owl:onProperty rdf:nodeID="node1597"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1600">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1602">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1608">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000221"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1610">
+	<owl:onProperty rdf:nodeID="node1612"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1618">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1619">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1647">
+	<owl:onProperty rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1648">
+	<owl:onProperty rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1649">
+	<owl:onProperty rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtAllTimes"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1651">
+	<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1554">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1555">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1556">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1557">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1560">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1562">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1573">
+	<owl:someValuesFrom rdf:nodeID="node1575"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1577">
+	<owl:someValuesFrom rdf:nodeID="node1580"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1582">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1584">
+	<owl:someValuesFrom rdf:nodeID="node1586"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1588">
+	<owl:someValuesFrom rdf:nodeID="node1590"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1595">
+	<owl:someValuesFrom rdf:nodeID="node1598"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1600">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1602">
+	<owl:someValuesFrom rdf:nodeID="node1604"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1608">
+	<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1615">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1617">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1631">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1633">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1640">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1642">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1647">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1648">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1657">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1659">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1665">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1667">
+	<owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1671">
+	<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1675">
+	<owl:someValuesFrom rdf:nodeID="node1677"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1545">
+	<owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1619">
+	<owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1620">
+	<owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1623">
+	<owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1627">
+	<owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1636">
+	<owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1649">
+	<owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1652">
+	<owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#handlesMaterial">
+	<skos:definition xml:lang="en">x handles material y = there exists process boudary z, port x participates in process boundary z, and material entity y participates in process boundary z.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasLogicalSubSystemAtSomeTime">
+	<skos:definition>a has logical subsystem b = a, b are both logical systems, and logical system b is a part of logical system a that make its logic complet</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasSubSystemAtSomeTime">
+	<skos:definition>a has subsystem b = a, b are both systems, and system b is a part of system a that make it work</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification">
+	<skos:definition xml:lang="en">Restrictions indicating that the installation of the dashboard must occur after the windshield is in place but before the seats are installed</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowJoinProcess">
+	<explanatoryNote xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">typically waiting for all incoming flows to complete before proceeding to the combined flow.</explanatoryNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow">
+	<explanatoryNote xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">Flows describe how different parts of a system interact and how resources or information move through the system. In SysML, flows are often represented using Item Flows on connectors between blocks.</explanatoryNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#handlesMaterial">
+	<firstOrderLogicAxiom xmlns="https://spec.industrialontologies.org/ontology/annotation/">handleMaterial(x,y) ↔ Port(x) ∧ MaterialEntity(y) ∧ ∃z(ProcessBoundary(z) participatesIn(x,z) ∧ participatesIn(y,z)</firstOrderLogicAxiom>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A port is a interaction point through which data, command, material, or energy can enter or leave the owning block.</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtAllTimes">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">p has function part c at all times =Def for all times t, p exists at t implies (p is a function, c is a function, and c functions to make p functions some way at t)</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">a has function part b = a, b are both functions, and function b make function a works</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasInputState">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">process a has input state b, means b is the process boundary at the input of a</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasOutputState">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">process a has output state b, means b is the process boundary at the output of a</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasAmountOfWorkers">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/">'has amount of workers' notifies the the amount of workers or labors is required in a specific process</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasDuration">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/">'has duration' is the temporal duration for a planned process, whereas its unit has to be declared such as second or minute</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">The function of a port</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlEndProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A  control flow process that terminates the execution or deactivates ae activity, or sequence within a system</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A control flow process represents the transfer of control signals or commands that influence the behavior or state of components within a system</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#InformationFlow">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">An information flow represents the transfer of data, commande, or knowledge between components or actors in a system</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowDecisionProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A control flow process that evaluates a condition and directs the control flow to one of several possible paths based on the outcome of the option</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowForkProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A control flow process that splits a single control flow into multiple concurrent flows, allowing parallel execution of activities or processes</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowJoinProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A control flow process that combines multiple control flows into a single flow</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlowMergeProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A control flow process that combines multiple control flows into a single flow, allowing the process to continue when any one of the incoming flows is activated</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlStartProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A  control flow process that initiates the execution or activation of activity, or sequence within a system</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlTransferProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A control flow process that transfers control from one component or activity to another within a system</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A connector represents the transfer or exchange of elements (such as material, information, or control signals) between components or parts of a system.</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FlowSpecification">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">a plan specification that prescribes the transfer of materials, information, or energy between different functions or components within a system or process</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A function specification that prescribes one or a set of functions or activities about taking something from the exterior.</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A function specification is an information content entity that prescribes one or a set of functions or activities about giving something to exterior.</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionFlowSpecification">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">a flow specification of function or functions</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionPrecedenceSpecification">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">a precedence specification that prescribes the properties and relationships between functions or activities within a function</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PrecedenceSpecification">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">a plan specification that prescribes the sequential or parallel relationships between functions or activities within a process or system, including dependencies and timing constraints</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFunction">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">function of a system</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#FunctionSpecification">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">a plan specification that prescribes a set of functions or activities to be performed within a system or process.</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#IncomingPort">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">An incoming port is an interaction point through which data, command, material, or energy can enter the owning block.</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunction">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">the function of a port to accept incoming data, signals, or control flows from exterior</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowDecisionProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A material location change process that evaluates a condition and directs the control flow to one of several possible paths based on the outcome of the option</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowForkProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A material location change process that splits a single control flow into multiple concurrent flows, allowing parallel execution of activities or processes</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowJoinProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A material location change process that combines multiple control flows into a single flow, typically waiting for all incoming flows to complete before proceeding</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialFlowMergeProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A material location change process that combines multiple control flows into a single flow, allowing the process to continue when any one of the incoming flows is activated</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSinkProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A material location change process that receives, consumes, or removes material from a system, acting as the termination point for a material sequence</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialSourceProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A material location change process that introduces or generates material into a system, acting as the origin point for a material sequence</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#MaterialTransferProcess">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">A material location change process that transfers control from one component or activity to another within a system</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#OutgoingPort">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">An incoming port is an interaction point through which data, command, material, or energy can enter the owning block.</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/">the function of a port to sending outgouing data, signals, or control flows to exterior</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemFlowSpecification">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">a flow specification of system or systems</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SystemPrecedenceSpecification">
+	<naturalLanguageDefinition xmlns="https://spec.industrialontologies.org/ontology/annotation/" xml:lang="en">a precedence specification that prescribes the properties and relationships between systems or activities within a system</naturalLanguageDefinition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign">
+	<dc:contributor xml:lang="en">Arkopaul Sarkar, University of Technology of Tarbes</dc:contributor>
+	<dc:contributor xml:lang="en">Mohamed Hedi KARRAY, University of Technology of Tarbes</dc:contributor>
+	<dc:license xml:lang="en">http://opensource.org/licenses/MIT</dc:license>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1548">
+	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1552">
+	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1565">
+	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1569">
+	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1548">
+	<owl:onClass rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1552">
+	<owl:onClass rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ControlFlow"/>
+</rdf:Description>
+
+</rdf:RDF>
