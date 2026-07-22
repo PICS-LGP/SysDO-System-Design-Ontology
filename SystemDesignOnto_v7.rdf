@@ -573,12 +573,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
-                <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Flow"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>flow specification</rdfs:label>
         <skos:example xml:lang="en">A manual of drink production line the movement of bottles through the production line, detailing the rate of flow, the routing between stations</skos:example>
         <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a plan specification that prescribes the transfer of materials, information, or energy between different functions or components within a system or process</AnnotationVocabulary:naturalLanguageDefinition>
@@ -609,7 +603,7 @@
         </rdfs:subClassOf>
         <rdfs:label>function precedence specification</rdfs:label>
         <skos:example xml:lang="en">function f1 f2 f3 must be triggered respectively, that is f1 precedes f2 that precedes f3</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a precedence specification that prescribes the properties and relationships between functions or activities within a function</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a precedence specification that prescribes the properties and relationships between some functions or activities realizing the functions</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -912,8 +906,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000183"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -936,6 +930,10 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000034"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
+                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
                         <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#Port"/>
@@ -971,7 +969,7 @@
                     <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
-                        <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#ReceivingFunctionSpecification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1020,7 +1018,7 @@
                     <rdf:Description rdf:about="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#PortFunction"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
-                        <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunctionSpecification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1080,6 +1078,10 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000034"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+                        <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
                         <owl:allValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/System"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1096,12 +1098,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtSomeTime"/>
                 <owl:someValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#hasFunctionPartAtAllTimes"/>
-                <owl:allValuesFrom rdf:resource="http://www.pics.lgp.uttop.fr/ontologies/systemdesign#SendingFunction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>system function</rdfs:label>
@@ -1125,6 +1121,19 @@
         <skos:example xml:lang="en">In a system precedence specification SS1, system s1 must complete its processing before system s2 can initiate. that is s1 precedes s2</skos:example>
         <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">a precedence specification that prescribes the properties and relationships between systems or activities within a system</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
+    
+
+
+    <!-- https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem -->
+
+    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
     
 
 
@@ -1155,12 +1164,6 @@
     <!-- https://spec.industrialontologies.org/ontology/core/Core/System -->
 
     <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/System">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
-                <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
@@ -1246,5 +1249,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
